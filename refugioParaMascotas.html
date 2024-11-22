@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Refugio Para Mascotas</title>
+            <link rel="stylesheet" href="css/refugioParaMascotas.css">
+        </head>
+    <body>
+            <header>
+                <div class="navbar">
+                    <img src="img/heart-light.png" alt="Heart">
+                    <h1> Pet shelter</h1>
+                    <nav>
+                        <a href="#">Find a Pet</a>
+                        <a href="#">About</a>
+                        <button id="donarButton">Donate</button>
+                    </nav>
+                </div>
+            </header>
+
+            <!--Busqueda-->
+            <div class="barraBusqueda">
+                <img src="img/paw-light.png" alt="paw">
+                <label for="tipoMascota">I'm looking for a...</label>
+                <select id="tipoMascota">
+                    <option value="Any">Any Pet</option>
+                    <option value="Dog">Dog</option>
+                    <option value="Cat">Cat</option>
+                </select>
+                <img src="img/pin-light.png" alt="pin">
+                <label for="location">in or near...</label>
+                <input type="text" id="location" placeholder="City or Zip Code">
+                <button id="searchButton">Find your new best friend</button>
+            </div>
+
+            <!--Listado Mascotas-->
+            <div class="mascota">
+            
+                <!--Primer mascota-->
+                <div class="peludo">
+                    <img src="img/pepper.jpg" alt="Pepper" class="fotoPeludo">
+                    <div class="informacion">
+                        <h2>Pepper</h2>
+                        <p>Pepper is a slightly shy grey tabby, but she loves showing affection.</p>
+                    
+                        <div class="interaccionMascota">
+                            <span id="contadorDeMascotasPepper">3 petting(s)</span>
+                            <button onclick="aumentarMascotas(`contadorDeMascotasPepper`)">Pet Pepper</button>
+                        </div>
+                    </div>
+                </div>
+            
+        
+                <!--Segunda mascota-->
+                <div class="peludo">
+                    <img src="img/bruce.jpg" alt="Bruce" class="fotoPeludo">
+                    <div class="informacion">
+                        <h2>Bruce</h2>
+                        <p>Bruce is a loyal companion. He loves long walks and cold weather.</p>
+                        
+                        <div class="interaccionMascota">
+                            <span id="contadorDeMascotasBruce">5 petting(s)</span>
+                            <button onclick="aumentarMascotas(`contadorDeMascotasBruce`)">Pet Bruce</button>
+                        </div>
+                    </div>
+                </div>
+            
+        
+                <!--Tercera mascota-->
+                <div class="peludo">
+                    <img src="img/oscar.jpg" alt="Oscar" class="fotoPeludo">
+                    <div class="informacion">
+                        <h2>Oscar</h2>
+                        <p>Oscar is bright, energetic, and friendly. He is looking for good home.</p>
+                        
+                        <div class="interaccionMascota">
+                            <span id="contadorDeMascotasOscar">8 petting(s)</span>
+                            <button onclick="aumentarMascotas(`contadorDeMascotasOscar`)">Pet Oscar</button>
+                        </div>    
+                    </div>
+                </div>    
+            </div>          
+        <script src="js/refugioParaMascotas.js"></script>
+    </body>
+</html>
